@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root {
+    --main-bg-color: #2874f0; 
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 1000px) {
+   nav {
+    flex-direction: column;
+    justify-content: center;
+   }
+   nav .logo {
+     margin: 15px auto 5px auto;
+   }
+   nav ul {
+    margin: 5px auto;
+   }
+   nav .search {
+    margin: auto auto 15px auto;
+   }
+}
+
+@media screen and (max-width: 800px) {
+    .card-items {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 493px;
+    height: 27px;
+    border-radius: 2px;
+    margin: 0 16px 0 56px;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul {
+   height: 58px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+main {
+
+}
+footer {
+    background-color: var(--main-bg-color);
+    height: 12vh;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.search button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    /* width: 80vw; */
+    margin: 12px 0;
+}
+
+.card {
+    max-width: 91vw;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 12vw;
+    margin: 0 15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #ffff;
+    border-radius: 10px;
+}
+
+main {
+    background-color: #f1f3f6;
+}
